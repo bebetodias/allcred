@@ -4,21 +4,28 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1, width=device-width">
+
+	<!-- STYLES -->
 	<link rel="stylesheet" href="./assets/css/global.css" />
 	<link rel="stylesheet" href="./assets/css/style.css" />
-	<link rel="stylesheet" href="./assets/css/mobile.css" />
 	<link rel="stylesheet" href="./assets/css/header.css" />
+	<link rel="stylesheet" href="./assets/css/footer.css" />
 	<link rel="stylesheet" href="./assets/css/card-list-icon.css" />
+	<link rel="stylesheet" href="./assets/css/mobile.css" />
 
+	<!-- FONTS -->
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Stack Sans Headline:wght@200;300;400;500;600;700&display=swap" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+
+	<!-- COMPONENTS -->
 	<script type="module" src="./components/header.js"></script>
+	<script type="module" src="./components/footer.js"></script>
 	<script type="module" src="./components/card-list-icon.js"></script>
 </head>
 
 <body>
-	<header-nav></header-nav>
+	<ac-header></ac-header>
 
 	<section class="hero blue-bg" id="about">
 		<div class="container">
@@ -51,7 +58,7 @@
 				</div>
 
 				<div class="hero-cta-group">
-					<a href="#contato" class="btn btn-hero-secondary">
+					<a href="#contato" class="btn btn-green">
 						Fale coma a gente
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 							stroke-width="2">
@@ -113,7 +120,7 @@
 				<p>Como correspondente bancário autorizado pelo Banco Central do Brasil, a Allcred opera com toda a
 					segurança e credibilidade que um produto financeiro exige, aliada à proximidade de uma empresa
 					local que conhece a realidade do seu cliente.</p>
-				<a href="#contato" class="btn btn-hero-secondary">
+				<a href="#contato" class="btn btn-green">
 					Fale coma a gente
 					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 						<circle cx="12" cy="12" r="10"></circle>
@@ -201,18 +208,18 @@
 			</div>
 			<div class="diferencial-grid">
 				<div class="diferenciais-list">
-					<card-list-icon icon="heart" title="Atendimento verdadeiramente humanizado"
+					<ac-card-list icon="heart" title="Atendimento verdadeiramente humanizado"
 						text="Cada cliente é atendido por um consultor dedicado, que explica cada etapa com calma e clareza, sem pressa e sem scripts de call center.">
-					</card-list-icon>
-					<card-list-icon icon="dollar" title="As menores taxas do Estado de SP" text="Operamos com os melhores bancos parceiros para garantir as condições mais
+					</ac-card-list>
+					<ac-card-list icon="dollar" title="As menores taxas do Estado de SP" text="Operamos com os melhores bancos parceiros para garantir as condições mais
 								competitivas disponíveis para cada perfil e cada produto.">
-					</card-list-icon>
-					<card-list-icon icon="shield" title="Transparência em cada detalhe" text="Apresentamos todas as condições do contrato antes de qualquer assinatura.
+					</ac-card-list>
+					<ac-card-list icon="shield" title="Transparência em cada detalhe" text="Apresentamos todas as condições do contrato antes de qualquer assinatura.
 								Sem letras miúdas surpresa, sem cobranças escondidas, sem pressão.">
-					</card-list-icon>
-					<card-list-icon icon="location" title="Com sede em Franca e atuação em todo o Estado de São Paulo, estamos perto
+					</ac-card-list>
+					<ac-card-list icon="location" title="Com sede em Franca e atuação em todo o Estado de São Paulo, estamos perto
 								de você,t seja pelo WhatsApp, por telefone ou pessoalmente.">
-					</card-list-icon>
+					</ac-card-list>
 				</div>
 				<div class="diferencial-image">
 					<img src="./assets/images/diferencial-person.jpg" alt="Allcred com as menores taxas"
@@ -241,71 +248,7 @@
 		</div>
 	</section>
 
-	<footer class="footer blue-bg">
-		<div class="container">
-			<div class="footer-top">
-				<!-- Brand Column -->
-				<div class="footer-brand">
-					<div class="footer-logo">
-						<img src="./assets/images/logo_allcred_branco.png" alt="Allcred Logo" width="186" height="129">
-					</div>
-					<p class="footer-brand-desc">
-						Correspondente Bancário há mais de 15 Anos para o Sul, Sudeste e todo Brasil
-					</p>
-					<div class="footer-legal-info">
-						<p>CNPJ: 08.768.992/0002-94</p>
-						<p>Rua Major Mendonça, 1369 — Vila Santo Antônio<br>Franca, SP · CEP 14401-161</p>
-					</div>
-				</div>
-
-				<!-- Column: Produtos -->
-				<div class="footer-col">
-					<h4 class="footer-col-title">PRODUTOS</h4>
-					<div class="footer-links-list">
-						<a href="#">Empréstimo consignado INSS</a>
-						<a href="#">Servidores estaduais SP</a>
-						<a href="#">Servidores federais</a>
-						<a href="#">Militares</a>
-						<a href="#">Cartão consignado</a>
-						<a href="#">Portabilidade</a>
-						<a href="#">Refinanciamento</a>
-					</div>
-				</div>
-
-				<!-- Column: Empresa -->
-				<div class="footer-col">
-					<h4 class="footer-col-title">EMPRESA</h4>
-					<div class="footer-links-list">
-						<a href="#">Sobre a Allcred</a>
-						<a href="#">Agências</a>
-						<a href="#">Trabalhe conosco</a>
-						<a href="#">Seja uma promotora</a>
-						<a href="#">Fale conosco</a>
-					</div>
-				</div>
-
-				<!-- Column: Atendimento -->
-				<div class="footer-col">
-					<h4 class="footer-col-title">ATENDIMENTO</h4>
-					<div class="footer-links-list">
-						<a href="tel:1630307055">(16) 3030-7055</a>
-						<a href="https://wa.me/">WhatsApp</a>
-						<a href="mailto:sac@allcredpromotora.com.br">sac@allcredpromotora.com.br</a>
-						<p style="margin-top: 8px;">Seg–Sex: 8h às 18h<br>Sábado: 9h às 13h</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="footer-bottom">
-				<p>© 2025 Allcred Promotora de Crédito. Todos os direitos reservados.</p>
-				<div class="footer-legal-links">
-					<a href="#">Política de Privacidade</a>
-					<a href="#">Termos de Uso</a>
-					<a href="#">Ouvidoria</a>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<ac-footer></ac-footer>
 
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {

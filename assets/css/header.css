@@ -14,47 +14,75 @@ header {
 
 .logo { max-width: 8rem; }
 
-header .nav-links {
+header .nav {
 	display: flex;
+	align-items: center;
+	gap: var(--size-8);
 }
 
-.menu-toggle, .main-menu .menu-close {
-	display: none;
+.nav-link {
+  font-size: var(--size-16);
+  font-weight: 500;
+  color: var(--cream);
+  padding: var(--size-8) var(--size-16);
+  border-radius: var(--size-8);
+  transition: color .15s, background .15s;
 }
 
-.main-menu {
-    position: relative;
-    right: auto;
-    top: auto;
-    height: auto;
-    display: block;
+.nav-link:hover,
+.nav-link.active {
+  background-color: var(--green-accent);
 }
 
 .main-menu ul {
-    display: flex;
-    gap: var(--size-10);
-    padding: 0;
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-            box-shadow: none;
-    height: auto;
-    width: auto;
-    background: none;
-    list-style: none;
+  display: flex;
+  gap: var(--size-10);
+  padding: 0;
+  -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+          box-shadow: none;
+  height: auto;
+  width: auto;
+  background: none;
+  list-style: none;
 }
 
-.nav-links a {
-	color: var(--cream);
-	text-decoration: none;
-	font-size: var(--size-16);
-	font-weight: 500;
-	position: relative;
-	padding: var(--size-8) var(--size-16);
+.header-cta {
+  display: flex;
+  align-items: center;
+  gap: var(--size-8);
+  flex-shrink: 0;
 }
 
-.nav-links a:hover, 
-.nav-links a.active {
-	background-color: var(--green-accent);
-	border-radius: var(--size-8);
-	width: 100%;
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  gap: 5px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--borda);
+  transition: background .15s;
+  cursor: pointer;
+}
+.menu-checkbox {
+  display: none;
+}
+
+.mobile-menu {
+	display: none;
+	position: fixed;
+	inset: 105px 0 0 0;
+	z-index: 1000;
+	background: var(--cream);
+	padding: var(--size-24) var(--size-24) 40px;
+	flex-direction: column;
+	gap: 2px;
+	overflow-y: auto;
+}
+
+.menu-checkbox:checked ~ .mobile-menu {
+  display: flex;
 }

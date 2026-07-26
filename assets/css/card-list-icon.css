@@ -23,3 +23,9 @@
     background: var(--green-accent);
     color: var(--green-soft);
 }
+.card-list-icon h3 {
+    font-size: clamp(var(--size-16), 3vw, var(--size-18));
+}
+.card-list-icon h3 {
+    font-size: clamp(var(--size-14), 2vw, var(--size-16));
+}

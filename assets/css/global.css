@@ -103,12 +103,12 @@ a { text-decoration: none; color: inherit; }
     background-color: var(--blue-deep);
     color: var(--green-soft);
 }
-.btn-hero-primary {
+.btn-white {
     background-color: var(--white);
     color: var(--blue-deep);
     
 }
-.btn-hero-secondary {
+.btn-green {
     background-color: var(--green-accent);
     color: var(--cream);
 }

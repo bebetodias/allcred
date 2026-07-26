@@ -4,19 +4,27 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1, width=device-width">
+
+	<!-- STYLES -->
 	<link rel="stylesheet" href="./assets/css/global.css" />
 	<link rel="stylesheet" href="./assets/css/style.css" />
-	<link rel="stylesheet" href="./assets/css/mobile.css" />
 	<link rel="stylesheet" href="./assets/css/header.css" />
+	<link rel="stylesheet" href="./assets/css/footer.css" />
+	<link rel="stylesheet" href="./assets/css/mobile.css" />
+
+	<!-- FONTS -->
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Stack Sans Headline:wght@200;300;400;500;600;700&display=swap" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+
+	<!-- COMPONENTS -->
 	<script type="module" src="./components/header.js"></script>
+	<script type="module" src="./components/footer.js"></script>
 </head>
 
 <body>
 	<!-- Nav -->
-	<header-nav></header-nav>
+	<ac-header></ac-header>
 
 	<section class="hero blue-bg" id="home">
 		<div class="container">
@@ -89,7 +97,7 @@
 				</div>
 
 				<div class="hero-cta-group">
-					<a href="https://wa.me/" class="btn btn-hero-primary" target="_blank" rel="noopener">
+					<a href="https://wa.me/" class="btn btn-white" target="_blank" rel="noopener">
 						Chamar no Whats
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 							stroke-width="2">
@@ -97,7 +105,7 @@
 							<path d="M12 8l4 4-4 4M8 12h8" stroke-linecap="round" stroke-linejoin="round"></path>
 						</svg>
 					</a>
-					<a href="#contato" class="btn btn-hero-secondary">
+					<a href="#contato" class="btn btn-green">
 						Me Ligue
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 							stroke-width="2">
@@ -875,73 +883,21 @@
 		</div>
 	</section>
 
-	<footer class="footer blue-bg">
-		<div class="container">
-			<div class="footer-top">
-				<!-- Brand Column -->
-				<div class="footer-brand">
-					<div class="footer-logo">
-						<img src="./assets/images/logo_allcred_branco.png" alt="Allcred Logo" width="186" height="129">
-					</div>
-					<p class="footer-brand-desc">
-						Correspondente Bancário há mais de 15 Anos para o Sul, Sudeste e todo Brasil
-					</p>
-					<div class="footer-legal-info">
-						<p>CNPJ: 08.768.992/0002-94</p>
-						<p>Rua Major Mendonça, 1369 — Vila Santo Antônio<br>Franca, SP · CEP 14401-161</p>
-					</div>
-				</div>
-
-				<!-- Column: Produtos -->
-				<div class="footer-col">
-					<h4 class="footer-col-title">PRODUTOS</h4>
-					<div class="footer-links-list">
-						<a href="#">Empréstimo consignado INSS</a>
-						<a href="#">Servidores estaduais SP</a>
-						<a href="#">Servidores federais</a>
-						<a href="#">Militares</a>
-						<a href="#">Cartão consignado</a>
-						<a href="#">Portabilidade</a>
-						<a href="#">Refinanciamento</a>
-					</div>
-				</div>
-
-				<!-- Column: Empresa -->
-				<div class="footer-col">
-					<h4 class="footer-col-title">EMPRESA</h4>
-					<div class="footer-links-list">
-						<a href="#">Sobre a Allcred</a>
-						<a href="#">Agências</a>
-						<a href="#">Trabalhe conosco</a>
-						<a href="#">Seja uma promotora</a>
-						<a href="#">Fale conosco</a>
-					</div>
-				</div>
-
-				<!-- Column: Atendimento -->
-				<div class="footer-col">
-					<h4 class="footer-col-title">ATENDIMENTO</h4>
-					<div class="footer-links-list">
-						<a href="tel:1630307055">(16) 3030-7055</a>
-						<a href="https://wa.me/">WhatsApp</a>
-						<a href="mailto:sac@allcredpromotora.com.br">sac@allcredpromotora.com.br</a>
-						<p style="margin-top: 8px;">Seg–Sex: 8h às 18h<br>Sábado: 9h às 13h</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="footer-bottom">
-				<p>© 2025 Allcred Promotora de Crédito. Todos os direitos reservados.</p>
-				<div class="footer-legal-links">
-					<a href="#">Política de Privacidade</a>
-					<a href="#">Termos de Uso</a>
-					<a href="#">Ouvidoria</a>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<ac-footer></ac-footer>
 
 	<script>
+		const mobileMenu = document.getElementById('mobile-menu');
+		function fecharMenu() {
+			mobileMenu.classList.remove('open');
+			hamburger.classList.remove('open');
+			hamburger.setAttribute('aria-expanded', 'false');
+			document.body.style.overflow = '';
+		}
+		document.addEventListener('keydown', e => {
+			if (e.key === 'Escape' && mobileMenu.classList.contains('open')) fecharMenu();
+		});
+
+		// FAQ
 		document.addEventListener('DOMContentLoaded', () => {
 			// 1. FAQ Accordion Interactivity
 			const faqItems = document.querySelectorAll('.faq-item');
@@ -963,6 +919,7 @@
 				});
 			});
 		});
+
 		// Faixa de comunicado rolando
 		var marqueeCopy = document.querySelector(".marquee-track").cloneNode(true);
 		document.querySelector(".marquee").appendChild(marqueeCopy);

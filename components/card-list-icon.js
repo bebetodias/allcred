@@ -55,4 +55,4 @@ class CardListIcon extends HTMLElement {
 	}
 }
 
-customElements.define("card-list-icon", CardListIcon);
+customElements.define("ac-card-list", CardListIcon);
