@@ -56,85 +56,59 @@ body {
 	font-weight: 300;
 }
 
-img {
-	max-width: 100%;
-	display: block;
-}
-
+/* BASICS */
+img { max-width: 100%; display: block; }
 h3 { color: var(--blue-mid);}
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+a { text-decoration: none; color: inherit; }
 
-button {
-    cursor: pointer;
-    border: none;
-    background: none;
-    font-family: inherit;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
+/* COLORS */
 .cream { color: var(--cream); }
 .blue { color: var(--blue-mid); }
 .green { color: var(--green-accent);}
+.green-soft { color: var(--green-soft);}
 .muted { color: var(--muted); }
 
+/* ASPECT RATIO */
 .square { aspect-ratio: 1 / 1; }
 .portrait { aspect-ratio: 4 / 5; }
 .landscape { aspect-ratio: 5 / 4; }
 
+/* TEXTS */
+.center { text-align: center;}
+
+/* MARGINS, PADDINGS AND BORDERS */
 .pb-0 { padding-bottom: 0;}
+.rounded-20 { border-radius: var(--size-20);}
 
-.green-bg {
-	background-image: url(../images/bg-shapes.png);
-	background-size: cover;
-	background-color: var(--green-dark);
-}
-.white-bg {
-	background-color: var(--white);
-}
-.blue-bg {
-	background-color: var(--blue-deep);
-	color: var(--cream);
-}
+/* BACKGROUNDS */
+.dark-green-bg { background-color: var(--green-dark); }
+.green-bg { background-image: url(../images/bg-shapes.png); background-size: cover; background-color: var(--green-dark); }
+.white-bg { background-color: var(--white); }
+.blue-bg { background-color: var(--blue-deep); color: var(--cream); }
 
-.btn-blue {
-    align-self: flex-start;
-    background-color: var(--blue-deep);
-    color: var(--green-soft);
-    font-size: var(--size-16);
+/* BUTTONS */
+.btn {
+	font-size: var(--size-16);
     font-weight: 600;
     padding: var(--size-16) var(--size-32);
     border-radius: 999px;
     display: flex;
     align-items: center;
     gap: var(--size-8);
-    transition: transform 0.2s ease, filter 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+	align-self: flex-start;
 }
-
+.btn-blue {
+    background-color: var(--blue-deep);
+    color: var(--green-soft);
+}
 .btn-hero-primary {
     background-color: var(--white);
     color: var(--blue-deep);
-    font-size: 16px;
-    font-weight: 600;
-    padding: 16px 32px;
-    border-radius: 999px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    
 }
-
 .btn-hero-secondary {
     background-color: var(--green-accent);
     color: var(--cream);
-    font-size: 16px;
-    font-weight: 600;
-    padding: 16px 32px;
-    border-radius: 999px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: transform 0.2s ease, filter 0.2s ease;
 }

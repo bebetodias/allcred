@@ -14,44 +14,14 @@
 
 <body>
 	<!-- Nav -->
-	<header>
-		<a href="#" class="logo">
-			<img src="./assets/images/logo_allcred_branco.png" alt="">
-		</a>
-		<a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-				stroke="#F5F2ED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-				class="lucide lucide-menu-icon lucide-menu">
-				<path d="M4 5h16" />
-				<path d="M4 12h16" />
-				<path d="M4 19h16" />
-			</svg>
-		</a>
-		<nav id="main-menu" class="main-menu" aria-label="Main menu">
-			<a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-					stroke="#F5F2ED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-					<path d="M18 6 6 18" />
-					<path d="m6 6 12 12" />
-				</svg>
-			</a>
-			<ul id="main-menu" class="nav-links">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Quem Somos</a></li>
-				<li><a href="#">Venha ser Parceiro</a></li>
-				<li><a href="#">Compra de Dívidas</a></li>
-				<li><a href="#">Convênios</a></li>
-			</ul>
-		</nav>
-		<a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
-	</header>
+	<header-nav></header-nav>
 
 	<section class="hero blue-bg" id="home">
 		<div class="container">
 			<div class="hero-bg">
 				<div class="hero-blur-green"></div>
 				<div class="hero-blur-blue"></div>
-				<img src="./assets/images/hero-01b.png" alt="" class="hero-img-right">
+				<img src="./assets/images/hero-home.png" alt="" class="hero-img-right">
 				<img src="./assets/images/cartoes-master.png" alt="Cartões Master" class="hero-card-master">
 
 				<div class="hero-card-floating">
@@ -60,7 +30,46 @@
 					<p class="hero-card-desc">Fale com a gente!</p>
 				</div>
 			</div>
+			<div class="hero-trust-list">
+				<div class="hero-trust-divider"></div>
 
+				<div class="hero-trust-item">
+					<svg class="trust-check-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M9 1.5L2.25 4.5V8.25C2.25 12.4 5.13 16.27 9 17.25C12.87 16.27 15.75 12.4 15.75 8.25V4.5L9 1.5ZM7.5 12.75L4.5 9.75L5.56 8.69L7.5 10.62L12.44 5.69L13.5 6.75L7.5 12.75Z"
+							fill="#A8D5BA"></path>
+					</svg>
+					<span class="hero-trust-text">Não cobramos taxa antecipada</span>
+				</div>
+
+				<div class="hero-trust-item">
+					<svg class="trust-check-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M9 1.5L2.25 4.5V8.25C2.25 12.4 5.13 16.27 9 17.25C12.87 16.27 15.75 12.4 15.75 8.25V4.5L9 1.5ZM7.5 12.75L4.5 9.75L5.56 8.69L7.5 10.62L12.44 5.69L13.5 6.75L7.5 12.75Z"
+							fill="#A8D5BA"></path>
+					</svg>
+					<span class="hero-trust-text">Sem depósito para liberar crédito</span>
+				</div>
+
+				<div class="hero-trust-item">
+					<svg class="trust-check-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M9 1.5L2.25 4.5V8.25C2.25 12.4 5.13 16.27 9 17.25C12.87 16.27 15.75 12.4 15.75 8.25V4.5L9 1.5ZM7.5 12.75L4.5 9.75L5.56 8.69L7.5 10.62L12.44 5.69L13.5 6.75L7.5 12.75Z"
+							fill="#A8D5BA"></path>
+					</svg>
+					<span class="hero-trust-text">Seus dados protegidos — LGPD</span>
+				</div>
+
+				<div class="hero-trust-item">
+					<svg class="trust-check-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M9 1.5L2.25 4.5V8.25C2.25 12.4 5.13 16.27 9 17.25C12.87 16.27 15.75 12.4 15.75 8.25V4.5L9 1.5ZM7.5 12.75L4.5 9.75L5.56 8.69L7.5 10.62L12.44 5.69L13.5 6.75L7.5 12.75Z"
+							fill="#A8D5BA"></path>
+					</svg>
+					<span class="hero-trust-text">Atendimento humanizado para você organizar sua vida
+						financeira.</span>
+				</div>
+			</div>
 			<div class="hero-content">
 				<div class="hero-tag">
 					<span class="hero-tag-dot"></span>
@@ -78,7 +87,7 @@
 				</div>
 
 				<div class="hero-cta-group">
-					<a href="https://wa.me/" class="btn-hero-primary" target="_blank" rel="noopener">
+					<a href="https://wa.me/" class="btn btn-hero-primary" target="_blank" rel="noopener">
 						Chamar no Whats
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 							stroke-width="2">
@@ -86,7 +95,7 @@
 							<path d="M12 8l4 4-4 4M8 12h8" stroke-linecap="round" stroke-linejoin="round"></path>
 						</svg>
 					</a>
-					<a href="#contato" class="btn-hero-secondary">
+					<a href="#contato" class="btn btn-hero-secondary">
 						Me Ligue
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 							stroke-width="2">
@@ -96,58 +105,14 @@
 					</a>
 				</div>
 
-				<div class="hero-trust-list">
-					<div class="hero-trust-divider"></div>
-
-					<div class="hero-trust-item">
-						<svg class="trust-check-icon" viewBox="0 0 18 18" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M9 1.5L2.25 4.5V8.25C2.25 12.4 5.13 16.27 9 17.25C12.87 16.27 15.75 12.4 15.75 8.25V4.5L9 1.5ZM7.5 12.75L4.5 9.75L5.56 8.69L7.5 10.62L12.44 5.69L13.5 6.75L7.5 12.75Z"
-								fill="#A8D5BA"></path>
-						</svg>
-						<span class="hero-trust-text">Não cobramos taxa antecipada</span>
-					</div>
-
-					<div class="hero-trust-item">
-						<svg class="trust-check-icon" viewBox="0 0 18 18" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M9 1.5L2.25 4.5V8.25C2.25 12.4 5.13 16.27 9 17.25C12.87 16.27 15.75 12.4 15.75 8.25V4.5L9 1.5ZM7.5 12.75L4.5 9.75L5.56 8.69L7.5 10.62L12.44 5.69L13.5 6.75L7.5 12.75Z"
-								fill="#A8D5BA"></path>
-						</svg>
-						<span class="hero-trust-text">Sem depósito para liberar crédito</span>
-					</div>
-
-					<div class="hero-trust-item">
-						<svg class="trust-check-icon" viewBox="0 0 18 18" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M9 1.5L2.25 4.5V8.25C2.25 12.4 5.13 16.27 9 17.25C12.87 16.27 15.75 12.4 15.75 8.25V4.5L9 1.5ZM7.5 12.75L4.5 9.75L5.56 8.69L7.5 10.62L12.44 5.69L13.5 6.75L7.5 12.75Z"
-								fill="#A8D5BA"></path>
-						</svg>
-						<span class="hero-trust-text">Seus dados protegidos — LGPD</span>
-					</div>
-
-					<div class="hero-trust-item">
-						<svg class="trust-check-icon" viewBox="0 0 18 18" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M9 1.5L2.25 4.5V8.25C2.25 12.4 5.13 16.27 9 17.25C12.87 16.27 15.75 12.4 15.75 8.25V4.5L9 1.5ZM7.5 12.75L4.5 9.75L5.56 8.69L7.5 10.62L12.44 5.69L13.5 6.75L7.5 12.75Z"
-								fill="#A8D5BA"></path>
-						</svg>
-						<span class="hero-trust-text">Atendimento humanizado para você organizar sua vida
-							financeira.</span>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- Marquee -->
-	<div class="marquee">
+	<div class="marquee dark-green-bg">
 		<div class="marquee-track">
-			<div class="marquee-item">
+			<div class="marquee-item cream">
 				<div class="icon">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -161,7 +126,7 @@
 					<span>mais de 380 avaliações</span>
 				</div>
 			</div>
-			<div class="marquee-item">
+			<div class="marquee-item cream">
 				<div class="icon">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -173,11 +138,11 @@
 					</svg>
 				</div>
 				<div class="marquee-item-text">
-					+15 mil clientes
+					+250 mil clientes
 					<span>atendidos no Brasil</span>
 				</div>
 			</div>
-			<div class="marquee-item">
+			<div class="marquee-item cream">
 				<div class="icon">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -192,7 +157,7 @@
 					<span>Banco Master e CredCesta</span>
 				</div>
 			</div>
-			<div class="marquee-item">
+			<div class="marquee-item cream">
 				<div class="icon">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -209,7 +174,7 @@
 					<span>Atendemos em vários estados</span>
 				</div>
 			</div>
-			<div class="marquee-item">
+			<div class="marquee-item cream">
 				<div class="icon">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -243,20 +208,6 @@
 			</div>
 
 			<div class="cards-grid">
-				<div class="card portrait service" style="background-image: url(./assets/images/convenio-01.png);">
-					<h3 class="cream">Aposentados e Pensionistas</h3>
-					<p class="cream">Aposentado e Pensionista do INSS, faça seu crédito consignado na AllCred. É
-						rápido, prático e sem burocracia.</p>
-					<a href="#" class="service-link">Ver detalhes <svg xmlns="http://www.w3.org/2000/svg" width="20"
-							height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-							stroke-linecap="round" stroke-linejoin="round">
-							<circle cx="12" cy="12" r="10" />
-							<path d="m12 16 4-4-4-4" />
-							<path d="M8 12h8" />
-						</svg>
-					</a>
-				</div>
-
 				<div class="card portrait service" style="background-image: url(./assets/images/convenio-02.jpg);">
 					<h3 class="cream">Prefeitura de São Paulo</h3>
 					<p class="cream">Você servidor da cidade de São Paulo pode obter seu crédito consignado. Fale
@@ -908,7 +859,7 @@
 			<div class="cta-text">
 				<h3 class="section-title cream">Pronto para ter crédito com as <em>melhores condições</em>?</h3>
 				<p class="section-desc cream">Simule grátis agora ou fale com um consultor — sem compromisso.</p>
-				<a href="https://wa.me/" class="btn-blue" target="_blank" rel="noopener">
+				<a href="https://wa.me/" class="btn btn-blue" target="_blank" rel="noopener">
 					Chame no Whatsapp
 					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 						<circle cx="12" cy="12" r="10"></circle>

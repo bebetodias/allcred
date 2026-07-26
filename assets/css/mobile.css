@@ -1,5 +1,6 @@
 /* ===== Responsivo (Mobile) ===== */
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
+	/* MENU */
 	.menu-toggle {
 		display: inline-block;
 	}
@@ -78,10 +79,64 @@
 		background: rgba(0,0,0,.85);
 		cursor: default;
 	}
-
-	section {
-		padding: 5rem 4rem;
+	/* BUTTON */
+	.btn {
+		font-size: var(--size-14);
+		padding: var(--size-12) var(--size-24);
 	}
+
+	/* HERO */
+	.hero-bg {
+		height: 68%;
+		bottom: 0;
+		top: unset;
+	}
+	.hero-blur-blue, .hero-blur-green {
+		top: 0;
+	}
+	.hero-card-master {
+		width: clamp(200px, 25vw, 300px);
+		left: 13vw;
+	}
+	.hero-card-floating {
+		padding: var(--size-20) var(--size-24);
+		right: 13vw;
+	}
+	.hero-tag-text { font-size: var(--size-12);}
+	.hero-img-right { 
+		bottom: 0;
+		object-fit: contain;
+		left: 50%;
+		translate: -50%;
+		width: 100%;
+	}
+	.hero-content { 
+		width: 100%;
+		gap: var(--size-24); 
+	}
+	.hero-heading { 
+		line-height: 1;
+	}
+	.hero-subtitle { 
+		font-size: var(--size-16);
+		line-height: 1.2;
+	}
+	.hero-trust-list {
+		background: linear-gradient(to top, var(--blue-deep), rgba(10, 37, 64, 0));
+		left: 0;
+		padding: 20px;
+		gap: 8px;
+		width: 100%;
+	}
+	.hero-trust-item {
+		width: 48%;
+		line-height: 1;
+	}
+	.hero-trust-text {
+		font-size: var(--size-10);
+		line-height: inherit;
+	}
+	section, footer { padding: 5rem 4rem; }
 
 	.section-header {
 		grid-template-columns: 1fr;
@@ -89,9 +144,11 @@
 		margin-bottom: 3rem;
 	}
 
-	.cards-grid {
-		grid-template-columns: 1fr 1fr;
+	.card {
+		padding: 2rem 1.5rem;
 	}
+
+	.cards-grid { grid-template-columns: 1fr 1fr; }
 
 	.steps-container {
     	grid-template-columns: 1fr;
@@ -99,9 +156,7 @@
   	}
 
   	/* Esconde o bloco de imagens no mobile */
-  	.steps-images {
-	    display: none;
-  	}
+  	.steps-images { display: none; }
 
 	  /* Remove animação hover no mobile */
   	.step:hover {
@@ -123,7 +178,7 @@
 	    font-size: var(--size-18);
   	}
 
-	.creditcard-container {
+	.creditcard .container {
 		grid-template-columns: 1fr;
 	}
 
@@ -131,22 +186,54 @@
 		order: -1;
 	}
 
+	.reviews-grid {
+		grid-template-columns: 1fr;
+	}
+	.cta .person {
+		right: 0;
+		width: 220px;
+		height: 375px;
+	}
+	.footer-top {
+		flex-wrap: wrap;
+	}
+	.footer-brand { 
+		flex-basis: 100%; 
+		margin-bottom: 20px;
+	}
+	.footer-col { flex-basis: 30%;}
+	.footer-links-list a {
+		line-height: 1;
+	}
+
 }
 
 @media (max-width: 768px) {
-	header {
-		padding: 1rem 1.5rem;
-	}
+	header { padding: 1rem 1.5rem; }
+	.hero-img-right { object-fit: cover; }
+	.hero-card-master, .hero-card-floating { display: none; }
 
-	.nav-links {
-		display: none;
-	}
+	.nav-links { display: none; }
 
-	section {
+	.hero { padding: var(--size-24);}
+
+	section, footer {
 		padding: 5rem 1.5rem;
 	}
 
 	.cards-grid {
 		grid-template-columns: 1fr;
+	}
+	.cta-text {
+		width: 100%;
+	}
+	.cta .person {
+		right: 16px;
+		width: 110px;
+		height: 192px;
+	}
+	.footer-top, .footer-bottom {
+		flex-direction: column;
+		gap: var(--size-16);
 	}
 }

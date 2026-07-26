@@ -1,0 +1,60 @@
+/* ==================== header ==================== */
+header {
+	/*position: fixed;*/
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	padding: var(--size-8) var(--size-48);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--blue-deep);
+}
+
+.logo { max-width: 8rem; }
+
+header .nav-links {
+	display: flex;
+}
+
+.menu-toggle, .main-menu .menu-close {
+	display: none;
+}
+
+.main-menu {
+    position: relative;
+    right: auto;
+    top: auto;
+    height: auto;
+    display: block;
+}
+
+.main-menu ul {
+    display: flex;
+    gap: var(--size-10);
+    padding: 0;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    height: auto;
+    width: auto;
+    background: none;
+    list-style: none;
+}
+
+.nav-links a {
+	color: var(--cream);
+	text-decoration: none;
+	font-size: var(--size-16);
+	font-weight: 500;
+	position: relative;
+	padding: var(--size-8) var(--size-16);
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+	background-color: var(--green-accent);
+	border-radius: var(--size-8);
+	width: 100%;
+}
