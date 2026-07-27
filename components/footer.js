@@ -47,7 +47,7 @@ class Footer extends HTMLElement {
 							<h4 class="footer-col-title">ATENDIMENTO</h4>
 							<div class="footer-links-list">
 								<a href="tel:1630307055">(16) 3030-7055</a>
-								<a href="https://wa.me/">WhatsApp</a>
+								<a href="https://wa.me//5516981921371?text=Quero%20saber%20mais">WhatsApp</a>
 								<a href="mailto:sac@allcredpromotora.com.br">sac@allcredpromotora.com.br</a>
 								<p style="margin-top: 8px;">Seg–Sex: 8h às 18h<br>Sábado: 9h às 13h</p>
 							</div>

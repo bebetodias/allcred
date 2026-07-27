@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="./assets/css/global.css" />
+	<link rel="stylesheet" href="./assets/css/style.css" />
+	<link rel="stylesheet" href="./assets/css/header.css" />
+	<link rel="stylesheet" href="./assets/css/footer.css" />
+	<link rel="stylesheet" href="./assets/css/card-list-icon.css" />
+	<link rel="stylesheet" href="./assets/css/mobile.css" />
+
+	<!-- FONTS -->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Stack Sans Headline:wght@200;300;400;500;600;700&display=swap" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+
+	<!-- COMPONENTS -->
+	<script type="module" src="./components/header.js"></script>
+	<script type="module" src="./components/footer.js"></script>
+	<script type="module" src="./components/card-list-icon.js"></script>
+</head>
+
+<body>
+	<ac-header></ac-header>
+
+	<section class="hero blue-bg" id="about">
+		<div class="container">
+			<div class="hero-bg">
+				<div class="hero-blur-green"></div>
+				<div class="hero-blur-blue"></div>
+				<img src="./assets/images/parceria.png" alt="Parceria Alcred" class="hero-img-right">
+			</div>
+
+			<div class="hero-content">
+				<div class="hero-tag">
+					<span class="hero-tag-dot"></span>
+					<span class="hero-tag-text">Parceiros</span>
+				</div>
+
+				<div class="hero-title-box">
+					<h1 class="hero-heading">Atenda ainda mais Servidores.<br>Nós <em>cuidamos de tudo</em> para você
+					</h1>
+					<p class="hero-subtitle">
+						Se você já atua com soluções para servidores municipais e estaduais e quer ampliar a sua força
+						de vendas, venha ser parceiro Allcred. Você continua focado nas vendas enquanto nossa equipe
+						realiza análise, acompanhamento e fechamento das propostas.
+					</p>
+				</div>
+
+				<div class="hero-cta-group">
+					<a href="https://wa.me//5516981921371?text=Tenho%20interesse%20em%20ser%20parceiro%20Allcred"
+						class="btn btn-green">
+						Chamar ho Whatsapp
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="2">
+							<circle cx="12" cy="12" r="10"></circle>
+							<path d="M12 8l4 4-4 4M8 12h8" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Marquee -->
+	<div class="marquee white-bg">
+		<div class="marquee-track">
+			<div class="marquee-item blue">
+				<div class="marquee-item-text">
+					+250 mil clientes
+					<span class="muted">atendidos no Brasil</span>
+				</div>
+			</div>
+			<div class="marquee-item blue">
+				<div class="marquee-item-text">
+					+20 anos
+					<span class="muted">de atuação no mercado</span>
+				</div>
+			</div>
+			<div class="marquee-item blue">
+				<div class="marquee-item-text">
+					4,8 no Google
+					<span class="muted">mais de 380 avaliações</span>
+				</div>
+			</div>
+			<div class="marquee-item blue">
+				<div class="marquee-item-text">
+					Servidores Estaduais e Municipais
+					<span class="muted">Atendemos em vários estados</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PRODUCTS -->
+	<section id="products" class="green-bg">
+		<div class="container">
+			<div class="section-header">
+				<div>
+					<span class="section-tag cream">O que oferecemos</span>
+					<h2 class="section-title cream">Produtos disponíveis para <em>nossos parceiros</em></h2>
+				</div>
+				<p class="section-desc cream">Compramos a dívida de cartões benefício e cartões consignados, baixamos os
+					juros e ainda liberamos um troco</p>
+			</div>
+			<div class="steps-section">
+				<div class="steps-container">
+					<div class="steps-list">
+						<div class="step" data-image="step1">
+							<div class="step-number">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" class="lucide lucide-banknote-icon lucide-banknote">
+									<rect width="20" height="12" x="2" y="6" rx="2" />
+									<circle cx="12" cy="12" r="2" />
+									<path d="M6 12h.01M18 12h.01" />
+								</svg>
+							</div>
+							<div class="step-content">
+								<h3 class="step-title cream">Compra de Dívidas</h3>
+								<p class="step-description green-soft">Dívidas dos Bancos Master e Credcesta</p>
+							</div>
+						</div>
+
+						<div class="step" data-image="step2">
+							<div class="step-number">2</div>
+							<div class="step-content">
+								<h3 class="step-title cream">Cartão Benefício</h3>
+								<p class="step-description green-soft">
+									Compramos dívidas de Cartões Benefício, baixando o juros para seu cliente.
+								</p>
+							</div>
+						</div>
+
+						<div class="step" data-image="step3">
+							<div class="step-number">3</div>
+							<div class="step-content">
+								<h3 class="step-title cream">Cartão Consignado</h3>
+								<p class="step-description green-soft">
+									Compramos a sua dívida de cartões de crédito consignado.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<ul class="steps-table grid-2 cream-bg">
+						<li class="green-soft-bg green">Convênio</li>
+						<li class="green-soft-bg green">Produtos Oferecidos</li>
+						<li>Prefeitura de São Paulo (IPREM/HSPM)</li>
+						<li>Cartão Benefício + Consignado</li>
+						<li>Governo de São Paulo</li>
+						<li>Cartão Benefício</li>
+						<li>Prefeitura de Curitiba</li>
+						<li>Cartão Benefício</li>
+						<li>Governo do Paraná</li>
+						<li>Cartão Benefício</li>
+						<li>Prefeitura de São Luís</li>
+						<li>Cartão Consignado</li>
+						<li>Governo do Maranhão</li>
+						<li>Cartão Benefício + Consignado</li>
+						<li>Prefeitura de Porto Alegre</li>
+						<li>Cartão Benefício + Consignado</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- PROCESS -->
+	<section id="process">
+		<div class="container">
+			<div class="section-header">
+				<div>
+					<span class="section-tag green center">Como funciona a parceria</span>
+					<h2 class="section-title blue center">Um processo simples para você <em>vender mais</em>.</h2>
+				</div>
+			</div>
+
+			<div class="process">
+				<div class="steps-line">
+					<div class="step" data-image="step1">
+						<div class="step-number">1</div>
+						<div class="step-content">
+							<h3 class="step-title">Cadastre sua empresa</h3>
+							<p class="step-description">
+								Conte um pouco sobre sua operação e seu perfil.
+							</p>
+						</div>
+					</div>
+
+					<div class="step" data-image="step2">
+						<div class="step-number">2</div>
+						<div class="step-content">
+							<h3 class="step-title">Converse com nossa equipe</h3>
+							<p class="step-description">
+								Entendemos seus objetivos e apresentamos os produtos disponíveis.
+							</p>
+						</div>
+					</div>
+
+					<div class="step" data-image="step3">
+						<div class="step-number">3</div>
+						<div class="step-content">
+							<h3 class="step-title">Comece a vender</h3>
+							<p class="step-description">
+								Você envia as propostas e a AllCred conduz toda a operação.
+							</p>
+						</div>
+					</div>
+				</div>
+				<ul class="steps-table grid-1 white-bg">
+					<li class="green-soft-bg green">Quem pode ser parceiro</li>
+					<li>Correspondentes bancários</li>
+					<li>Promotoras de Crédito</li>
+					<li>Financeiras</li>
+					<li>Consultores Independentes</li>
+					<li>Empresas que desejam ampliar seu portifólio</li>
+				</ul>
+			</div>
+
+			<div>
+				<a href="#contato" class="btn btn-blue">
+					Fale coma a gente
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<circle cx="12" cy="12" r="10"></circle>
+						<path d="M12 8l4 4-4 4M8 12h8" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="responsabilidades" class="white-bg">
+		<div class="container">
+			<div class="responsability">
+				<img src="./assets/images/personagem-03.png" alt="Venda mais com AlCred">
+				<div class="container">
+					<div class="section-header">
+						<div>
+							<span class="section-tag green">Responsabilidades</span>
+							<h2 class="section-title blue">Você foca nas vendas. A AllCred <em>faz o resto</em></h2>
+						</div>
+					</div>
+					<div class="responsability">
+						<ul class="list-table green white-bg">
+							<li>VOCÊ</li>
+							<li>
+								<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="#196239" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round"
+										class="lucide lucide-circle-check-icon lucide-circle-check">
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<p>Prospecta clientes</p>
+							</li>
+							<li>
+								<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="#196239" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round"
+										class="lucide lucide-circle-check-icon lucide-circle-check">
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<p>Faz o atendimento inicial
+								</p>
+							</li>
+							<li>
+								<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="#196239" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round"
+										class="lucide lucide-circle-check-icon lucide-circle-check">
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<p>Envia a documentação</p>
+							</li>
+						</ul>
+						<ul class="list-table blue white-bg">
+							<li>ALLCRED</li>
+							<li>
+								<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="#196239" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round"
+										class="lucide lucide-circle-check-icon lucide-circle-check">
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<p>Analisa a operação</p>
+							</li>
+							<li>
+								<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="#196239" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round"
+										class="lucide lucide-circle-check-icon lucide-circle-check">
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<p>Faz o acompanhamento
+								</p>
+							</li>
+							<li>
+								<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="#196239" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round"
+										class="lucide lucide-circle-check-icon lucide-circle-check">
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<p>Envia a documentação</p>
+							</li>
+							<li>
+								<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="#196239" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round"
+										class="lucide lucide-circle-check-icon lucide-circle-check">
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<p>Finaliza o processo</p>
+							</li>
+							<li>
+								<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+										viewBox="0 0 24 24" fill="none" stroke="#196239" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round"
+										class="lucide lucide-circle-check-icon lucide-circle-check">
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<p>Dá suporte até a liberação</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="green-bg cta" id="contato">
+		<div class="container">
+			<div class="cta-text">
+				<h3 class="section-title cream">Seja parceiro <em>AllCred</em>?</h3>
+				<p class="section-desc cream">Faça parte da rede de parceiros da AllCred e ofereça mais soluções aos
+					seus clientes com o apoio de uma empresa que atua há mais de 15 anos no mercado.</p>
+				<a href="https://wa.me//5516981921371?text=Quero%20saber%20mais" class="btn btn-blue" target="_blank"
+					rel="noopener">
+					Quero ser parceiro
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<circle cx="12" cy="12" r="10"></circle>
+						<path d="M12 8l4 4-4 4M8 12h8" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</a>
+			</div>
+			<div class="person">
+				<img src="./assets/images/cta-person.png" alt="Atendimento Allcred">
+			</div>
+		</div>
+	</section>
+
+	<ac-footer></ac-footer>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			// 1. FAQ Accordion Interactivity
+			const faqItems = document.querySelectorAll('.faq-item');
+
+			faqItems.forEach(item => {
+				const questionBtn = item.querySelector('.faq-question-btn');
+				questionBtn.addEventListener('click', () => {
+					const isActive = item.classList.contains('active');
+
+					// Close all other FAQ items
+					faqItems.forEach(otherItem => {
+						otherItem.classList.remove('active');
+					});
+
+					// Toggle current item
+					if (!isActive) {
+						item.classList.add('active');
+					}
+				});
+			});
+		});
+		// Faixa de comunicado rolando
+		var marqueeCopy = document.querySelector(".marquee-track").cloneNode(true);
+		document.querySelector(".marquee").appendChild(marqueeCopy);
+
+		// Muda as imagens nos passos - Como Funciona
+		const steps = document.querySelectorAll('.step');
+		const images = document.querySelectorAll('.step-image');
+		steps.forEach(step => {
+			step.addEventListener('mouseenter', () => {
+				const targetId = step.dataset.image;
+				images.forEach(img => img.classList.toggle('active', img.id === targetId));
+			});
+		});
+	</script>
+</body>
+
+</html>

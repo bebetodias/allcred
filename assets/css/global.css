@@ -1,7 +1,7 @@
 :root {
 	--blue-deep: #0A2540;
 	--blue-mid: #1E3A5F;
-	--blue-light: #2D4F7C;
+	--blue-light: #74a4e4;
 	--green-accent: #2E8B57;
 	--green-soft: #A8D5BA;
 	--green-dark: #1F6B3F;
@@ -84,7 +84,9 @@ a { text-decoration: none; color: inherit; }
 /* BACKGROUNDS */
 .dark-green-bg { background-color: var(--green-dark); }
 .green-bg { background-image: url(../images/bg-shapes.png); background-size: cover; background-color: var(--green-dark); }
+.green-soft-bg  { background-color: var(--green-soft); }
 .white-bg { background-color: var(--white); }
+.cream-bg { background-color: var(--cream); }
 .blue-bg { background-color: var(--blue-deep); color: var(--cream); }
 
 /* BUTTONS */
