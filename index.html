@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="./assets/css/style.css" />
 	<link rel="stylesheet" href="./assets/css/header.css" />
 	<link rel="stylesheet" href="./assets/css/footer.css" />
+	<link rel="stylesheet" href="./assets/css/modal-me-ligue.css" />
 	<link rel="stylesheet" href="./assets/css/mobile.css" />
 
 	<!-- FONTS -->
@@ -20,6 +21,8 @@
 	<!-- COMPONENTS -->
 	<script type="module" src="./components/header.js"></script>
 	<script type="module" src="./components/footer.js"></script>
+	<script type="module" src="./components/feature-card.js"></script>
+	<script type="module" src="./components/modal-me-ligue.js"></script>
 </head>
 
 <body>
@@ -106,14 +109,15 @@
 							<path d="M12 8l4 4-4 4M8 12h8" stroke-linecap="round" stroke-linejoin="round"></path>
 						</svg>
 					</a>
-					<a href="#contato" class="btn btn-green">
-						Me Ligue
+					<button type="button" class="btn btn btn-green" id="btn-me-ligue">
+						<span>Me Ligue</span>
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 							stroke-width="2">
 							<circle cx="12" cy="12" r="10"></circle>
 							<path d="M12 8l4 4-4 4M8 12h8" stroke-linecap="round" stroke-linejoin="round"></path>
 						</svg>
-					</a>
+
+					</button>
 				</div>
 
 			</div>
@@ -478,67 +482,12 @@
 					é golpe. Desligue e ligue para nós imediatamente.</p>
 			</div>
 			<div class="cards-grid">
-				<div class="card">
-					<div class="card-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-							class="lucide lucide-shield-off-icon lucide-shield-off">
-							<path d="m2 2 20 20" />
-							<path
-								d="M5 5a1 1 0 0 0-1 1v7c0 5 3.5 7.5 7.67 8.94a1 1 0 0 0 .67.01c2.35-.82 4.48-1.97 5.9-3.71" />
-							<path
-								d="M9.309 3.652A12.252 12.252 0 0 0 11.24 2.28a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1v7a9.784 9.784 0 0 1-.08 1.264" />
-						</svg>
-					</div>
-					<h3 class="blue">Nunca pedimos depósito antecipado</h3>
-					<p class="service-desc muted">Nenhum valor precisa ser pago antes da liberação do seu empréstimo.
-					</p>
-					<a href="#contato" class="service-link">Simular <svg width="16" height="16" fill="none"
-							stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-							<path d="M5 12h14M12 5l7 7-7 7"></path>
-						</svg></a>
-				</div>
-				<div class="card">
-					<div class="card-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-							class="lucide lucide-shield-off-icon lucide-shield-off">
-							<path d="m2 2 20 20" />
-							<path
-								d="M5 5a1 1 0 0 0-1 1v7c0 5 3.5 7.5 7.67 8.94a1 1 0 0 0 .67.01c2.35-.82 4.48-1.97 5.9-3.71" />
-							<path
-								d="M9.309 3.652A12.252 12.252 0 0 0 11.24 2.28a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1v7a9.784 9.784 0 0 1-.08 1.264" />
-						</svg>
-					</div>
-					<h3 class="blue">Não cobramos taxa para liberar crédito</h3>
-					<p class="service-desc muted">Taxas de análise, seguro obrigatório ou outra cobrança são sinal de
-						fraude.
-					</p>
-					<a href="#contato" class="service-link">Simular <svg width="16" height="16" fill="none"
-							stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-							<path d="M5 12h14M12 5l7 7-7 7"></path>
-						</svg></a>
-				</div>
-				<div class="card">
-					<div class="card-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-							class="lucide lucide-shield-off-icon lucide-shield-off">
-							<path d="m2 2 20 20" />
-							<path
-								d="M5 5a1 1 0 0 0-1 1v7c0 5 3.5 7.5 7.67 8.94a1 1 0 0 0 .67.01c2.35-.82 4.48-1.97 5.9-3.71" />
-							<path
-								d="M9.309 3.652A12.252 12.252 0 0 0 11.24 2.28a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1v7a9.784 9.784 0 0 1-.08 1.264" />
-						</svg>
-					</div>
-					<h3 class="blue">Nunca pedimos aumento de score</h3>
-					<p class="service-desc muted">Você não precisa pagar para melhorar sua pontuação ou para ser
-						aprovado.</p>
-					<a href="#contato" class="service-link">Simular <svg width="16" height="16" fill="none"
-							stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-							<path d="M5 12h14M12 5l7 7-7 7"></path>
-						</svg></a>
-				</div>
+				<feature-card icon="shield_off" title="Nunca pedimos depósito antecipado"
+					text="Nenhum valor precisa ser pago antes da liberação do seu empréstimo."></feature-card>
+				<feature-card icon="shield_off" title="Não cobramos taxa para liberar crédito" text="Taxas de análise, seguro obrigatório ou outra cobrança são sinal de
+						fraude."></feature-card>
+				<feature-card icon="shield_off" title="Nunca pedimos aumento de score" text="Você não precisa pagar para melhorar sua pontuação ou para ser
+						aprovado."></feature-card>
 			</div>
 		</div>
 	</section>
@@ -887,7 +836,71 @@
 
 	<ac-footer></ac-footer>
 
+	<!-- MODAL ME LIGUE -->
+	<div class="modal-overlay" id="modal-me-ligue" aria-hidden="true">
+		<div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+			<button type="button" class="modal-close" id="modal-close-btn" aria-label="Fechar modal">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+					stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+					class="lucide lucide-x-icon lucide-x">
+					<path d="M18 6 6 18" />
+					<path d="m6 6 12 12" />
+				</svg>
+			</button>
+
+			<div class="modal-header">
+				<h3 id="modal-title" class="modal-heading">Deixe seus dados que entraremos em contato com você:</h3>
+			</div>
+
+			<form id="form-me-ligue" class="modal-form" action="https://formsubmit.co/sac@allcred.com.br" method="POST">
+				<input type="hidden" name="_subject" value="Solicitação de Contato - Me Ligue (Allcred)">
+				<input type="hidden" name="_captcha" value="false">
+
+				<div class="form-grid">
+					<div class="form-group">
+						<label for="input-nome">Nome:*</label>
+						<input type="text" id="input-nome" name="nome" placeholder="Seu nome completo" required>
+					</div>
+
+					<div class="form-group">
+						<label for="input-telefone">Telefone:*</label>
+						<input type="tel" id="input-telefone" name="telefone" placeholder="(00) 00000-0000"
+							maxlength="15" required>
+					</div>
+
+					<div class="form-group">
+						<label for="input-dia">Melhor dia:*</label>
+						<input type="text" id="input-dia" name="melhor_dia" placeholder="00/00/0000" maxlength="10"
+							required>
+					</div>
+
+					<div class="form-group">
+						<label for="input-horario">Horário:*</label>
+						<input type="text" id="input-horario" name="melhor_horario" placeholder="00:00" maxlength="5"
+							required>
+					</div>
+				</div>
+
+				<div class="form-actions">
+					<button type="submit" class="btn btn-blue">
+						<span>Enviar</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="lucide lucide-send-icon lucide-send">
+							<path
+								d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+							<path d="m21.854 2.147-10.94 10.939" />
+						</svg>
+					</button>
+				</div>
+
+				<div id="form-feedback" class="form-feedback" style="display: none;"></div>
+			</form>
+		</div>
+	</div>
+
 	<script>
+
 		const mobileMenu = document.getElementById('mobile-menu');
 		function fecharMenu() {
 			mobileMenu.classList.remove('open');

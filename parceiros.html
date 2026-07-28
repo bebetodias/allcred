@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="./assets/css/header.css" />
 	<link rel="stylesheet" href="./assets/css/footer.css" />
 	<link rel="stylesheet" href="./assets/css/card-list-icon.css" />
+	<link rel="stylesheet" href="./assets/css/feature-card.css" />
 	<link rel="stylesheet" href="./assets/css/mobile.css" />
 
 	<!-- FONTS -->
@@ -22,6 +23,8 @@
 	<script type="module" src="./components/header.js"></script>
 	<script type="module" src="./components/footer.js"></script>
 	<script type="module" src="./components/card-list-icon.js"></script>
+	<script type="module" src="./components/feature-card.js"></script>
+
 </head>
 
 <body>
@@ -32,7 +35,7 @@
 			<div class="hero-bg">
 				<div class="hero-blur-green"></div>
 				<div class="hero-blur-blue"></div>
-				<img src="./assets/images/parceria.png" alt="Parceria Alcred" class="hero-img-right">
+				<img src="./assets/images/hero-parceria.png" alt="Parceria Alcred" class="hero-img-right">
 			</div>
 
 			<div class="hero-content">
@@ -351,6 +354,35 @@
 		</div>
 	</section>
 
+	<section id="safety" class="safety">
+		<div class="container">
+			<div class="section-header">
+				<div>
+					<span class="section-tag green">Sua segurança em primeiro lugar</span>
+					<h2 class="section-title blue">A Allcred <em>nunca</em> vai pedir isso.</h2>
+				</div>
+				<p class="section-desc muted">Se alguém entrar em contato pedindo qualquer um dos itens abaixo em nome
+					da
+					Allcred,
+					é golpe. Desligue e ligue para nós imediatamente.</p>
+			</div>
+			<div class="cards-grid">
+				<feature-card icon="building" title="Estrutura pronta"
+					text="Você vende enquanto nossa equipe acompanha todo o processo."></feature-card>
+				<feature-card icon="badge_check" title="Especialistas dedicados"
+					text="Mais de 15 anos de experiência em crédito consignado e compra de dívidas."></feature-card>
+				<feature-card icon="briefcase" title="Mais produtos"
+					text="Amplie seu portfólio sem precisar negociar diretamente com diversos bancos."></feature-card>
+				<feature-card icon="handshake" title="Atendimento humanizado"
+					text="Seu cliente recebe acompanhamento próximo durante toda a operação."></feature-card>
+				<feature-card icon="headset" title="Suporte comercial"
+					text="Nossa equipe auxilia em dúvidas, documentos e andamento das propostas."></feature-card>
+				<feature-card icon="trending_up" title="Crescimento sem  custos"
+					text="Expanda seu negócio aproveitando uma estrutura já consolidada."></feature-card>
+			</div>
+		</div>
+	</section>
+
 	<section class="green-bg cta" id="contato">
 		<div class="container">
 			<div class="cta-text">
@@ -375,27 +407,6 @@
 	<ac-footer></ac-footer>
 
 	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			// 1. FAQ Accordion Interactivity
-			const faqItems = document.querySelectorAll('.faq-item');
-
-			faqItems.forEach(item => {
-				const questionBtn = item.querySelector('.faq-question-btn');
-				questionBtn.addEventListener('click', () => {
-					const isActive = item.classList.contains('active');
-
-					// Close all other FAQ items
-					faqItems.forEach(otherItem => {
-						otherItem.classList.remove('active');
-					});
-
-					// Toggle current item
-					if (!isActive) {
-						item.classList.add('active');
-					}
-				});
-			});
-		});
 		// Faixa de comunicado rolando
 		var marqueeCopy = document.querySelector(".marquee-track").cloneNode(true);
 		document.querySelector(".marquee").appendChild(marqueeCopy);

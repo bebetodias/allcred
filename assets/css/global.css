@@ -100,6 +100,7 @@ a { text-decoration: none; color: inherit; }
     gap: var(--size-8);
     transition: transform 0.2s ease, background-color 0.2s ease;
 	align-self: flex-start;
+	line-height: 1.8;
 }
 .btn-blue {
     background-color: var(--blue-deep);
@@ -113,4 +114,15 @@ a { text-decoration: none; color: inherit; }
 .btn-green {
     background-color: var(--green-accent);
     color: var(--cream);
+}
+
+/* ICONS */
+.box-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
 }
