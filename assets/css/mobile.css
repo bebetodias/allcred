@@ -95,7 +95,6 @@
 	.section-header {
 		grid-template-columns: 1fr;
 		gap: var(--size-32);
-		margin-bottom: 3rem;
 	}
 
 	.card {
@@ -160,6 +159,13 @@
 	}
 	.footer-col { flex-basis: 30%;}
 	.footer-links-list a { line-height: 1; }
+	.product-card .content {
+		flex-direction: column;
+		gap: var(--size-24);
+	}
+	.product-card a {
+		align-self: start;
+	}
 
 }
 
@@ -191,4 +197,17 @@
 		flex-direction: column;
 		gap: var(--size-16);
 	}
+	.product-card {
+		flex-wrap: wrap;
+		padding-block: var(--size-24);
+		text-align: center;
+	}
+	.product-card img {
+		margin: 0 auto;
+	}
+	.product-card a {
+		align-self: center;
+	}
+	
+	
 }

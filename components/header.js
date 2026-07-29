@@ -1,34 +1,56 @@
 const menu = [
-    { title:"Home", href:"index.html" },
-    { title:"Quem Somos", href:"sobre.html" },
-    { title:"Venha ser Parceiro", href:"parceiros.html" },
-    { title:"Compra de Dívidas", href:"compra-de-dividas.html" },
-    { title:"Convênios", href:"convenios.html" }
+    { title: "Home", href: "index.html" },
+    { title: "Quem Somos", href: "sobre.html" },
+    { title: "Venha ser Parceiro", href: "parceiros.html" },
+    { title: "Compra de Dívidas", href: "compra-de-dividas.html" },
+    {
+        title: "Convênios", href: "#",
+        children: [
+            { title: "Prefeitura de São Paulo (Iprem/HSPM)", href: "convenios/prefeitura-sao-paulo.html" },
+			{ title: "Governo de São Paulo", href: "convenios/governo-sao-paulo.html" },
+			{ title: "Prefeitura de Curitiba", href: "convenios/prefeitura-curitiba.html" },
+			{ title: "Governo do Paraná", href: "convenios/governo-parana.html" },
+			{ title: "Prefeitura de São Luis", href: "convenios/prefeitura-sao-luis.html" },
+			{ title: "Governo do Maranhão", href: "convenios/governo-maranhao.html" },
+			{ title: "Prefeitura de Porto Alegre", href: "convenios/prefeitura-porto-alegre.html" }
+        ]
+    }
 ];
 
+function renderMenu(items, current, mobile = false) {
+	const linkClass = mobile ? "nav-link-mobile" : "nav-link";
+	return items.map(item => {
+		const active = item.href === current ? "active" : "";
+		// Item sem submenu
+		if (!item.children?.length) {
+			return `<li><a href="${item.href}" class="${linkClass} ${active}">${item.title}</a></li>`;
+		}
+		// Item com submenu
+		return `
+			<li class="${mobile ? "mobile-nav-item" : "nav-item"} has-submenu">
+				<a href="${item.href}" class="${linkClass} ${active}">${item.title}</a>
+				<ul class="${mobile ? "mobile-submenu" : "submenu"}">
+					${renderMenu(item.children, current, mobile)}
+				</ul>
+			</li>
+		`;
+	}).join("");
+}
+
 class HeaderNav extends HTMLElement {
-	fecharMenu() {
-		mobileMenu.classList.remove('open');
-		hamburger.classList.remove('open');
-		hamburger.setAttribute('aria-expanded', 'false');
-		document.body.style.overflow = '';
-	}
 	connectedCallback(){
 		const current = location.pathname.split("/").pop() || "index.html";
-		const mainmenu = menu.map(item => `
-			<a href="${item.href}" class="nav-link ${item.href === current ? "active" : ""}">${item.title}</a>
-			`).join("");
-		const mainmenu_mobile = menu.map(item => `
-			<a href="${item.href}" class="nav-link-mobile ${item.href === current ? "active" : ""}" onclick="fecharMenu()">${item.title}</a>
-			`).join("");
-
+		const mainmenu = renderMenu(menu, current);
+		const mainmenu_mobile = renderMenu(menu, current, true);
 		this.innerHTML = `
 			<header>
-				<a href="./index.html" class="logo" aria-label="Allcred Promotora — página inicial">
-					<img src="./assets/images/logo_allcred_branco.png" alt="">
+				<a href="/allcred/index.html" class="logo" aria-label="Allcred Promotora — página inicial">
+					<img src="/allcred/assets/images/logo_allcred_branco.png" alt="">
 				</a>
-				<nav class="nav" role="navigation" aria-label="Menu principal">
-					${mainmenu}
+				<nav>
+					<ul class="nav" role="navigation" aria-label="Menu principal">
+						${mainmenu}
+					</ul>
 				</nav>
 				<div class="header-cta">
 					<a href="https://wa.me//5516981921371?text=Quero%20saber%20mais" class="btn btn-green" target="_blank" rel="noopener noreferrer">
@@ -42,8 +64,10 @@ class HeaderNav extends HTMLElement {
 						<span></span><span></span><span></span>
 					</label>
 					
-					<nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile" role="navigation">
-						${mainmenu_mobile}
+					<nav>
+						<ul class="mobile-menu" id="mobile-menu" aria-label="Menu mobile" role="navigation">
+							${mainmenu_mobile}
+						</ul>
 					</nav>
 				</div>
 			</header>

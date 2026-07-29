@@ -1,0 +1,147 @@
+/* ==================== header ==================== */
+header {
+	/*position: fixed;*/
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	padding: var(--size-8) var(--size-48);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--blue-deep);
+}
+
+.logo { max-width: 8rem; }
+
+header .nav {
+	display: flex;
+	align-items: center;
+	gap: var(--size-8);
+}
+
+.nav-link {
+  font-size: var(--size-16);
+  font-weight: 500;
+  color: var(--cream);
+  padding: var(--size-8) var(--size-16);
+  border-radius: var(--size-8);
+  transition: color .15s, background .15s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: var(--green-accent);
+}
+
+.main-menu ul {
+  display: flex;
+  gap: var(--size-10);
+  padding: 0;
+  -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+          box-shadow: none;
+  height: auto;
+  width: auto;
+  background: none;
+  list-style: none;
+}
+
+.header-cta {
+  display: flex;
+  align-items: center;
+  gap: var(--size-8);
+  flex-shrink: 0;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  gap: 5px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--borda);
+  transition: background .15s;
+  cursor: pointer;
+}
+.menu-checkbox {
+  display: none;
+}
+
+.mobile-menu {
+	display: none;
+	position: fixed;
+	inset: 105px 0 0 0;
+	z-index: 1000;
+	background: var(--cream);
+	padding: var(--size-24) var(--size-24) 40px;
+	flex-direction: column;
+	gap: 2px;
+	overflow-y: auto;
+}
+
+.menu-checkbox:checked ~ .mobile-menu {
+  display: flex;
+}
+
+/* ========== SUBMENU ==========*/
+.nav-item {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: calc(100% + 20px);
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    flex-direction: column;
+    background: var(--white);
+    padding: var(--size-40) var(--size-48);
+    border-radius: var(--size-8);
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+    z-index: 100;
+    gap: var(--size-14);
+}
+
+.submenu::before {
+  content: '';
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+.submenu::after {
+  content: '';
+  background-color: var(--white);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -8px;
+  right: 48px;
+}
+
+
+.has-submenu:hover > .submenu {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.submenu .nav-link {
+    color: #333;
+    padding: var(--size-12) var(--size-18);
+    white-space: nowrap;
+}
+
+.submenu .nav-link:hover {
+    background: #f5f5f5;
+}

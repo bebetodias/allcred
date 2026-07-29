@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="./assets/css/global.css" />
+	<link rel="stylesheet" href="./assets/css/style.css" />
+	<link rel="stylesheet" href="./assets/css/header.css" />
+	<link rel="stylesheet" href="./assets/css/footer.css" />
+	<link rel="stylesheet" href="./assets/css/modal-me-ligue.css" />
+	<link rel="stylesheet" href="./assets/css/mobile.css" />
+
+	<!-- FONTS -->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Stack Sans Headline:wght@200;300;400;500;600;700&display=swap" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+
+	<!-- COMPONENTS -->
+	<script type="module" src="./components/header.js"></script>
+	<script type="module" src="./components/footer.js"></script>
+	<script type="module" src="./components/feature-card.js"></script>
+	<script type="module" src="./components/modal-me-ligue.js"></script>
+</head>
+
+<body>
+	<!-- Nav -->
+	<ac-header></ac-header>
+
+	<section class="hero blue-bg" id="home">
+		<div class="container">
+			<div class="hero-bg">
+				<div class="hero-blur-green"></div>
+				<div class="hero-blur-blue"></div>
+				<img src="./assets/images/hero-home.png" alt="" class="hero-img-right">
+				<img src="./assets/images/cartoes-master.png" alt="Cartões Master" class="hero-card-master">
+
+				<div class="hero-card-floating">
+					<p class="hero-card-title">Margem Negativa??</p>
+					<p class="hero-card-title">Sem margem??</p>
+					<p class="hero-card-desc">Fale com a gente!</p>
+				</div>
+			</div>
+			<div class="hero-trust-list">
+				<div class="hero-trust-divider"></div>
+
+				<div class="hero-trust-item">
+					<svg class="trust-check-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M9 1.5L2.25 4.5V8.25C2.25 12.4 5.13 16.27 9 17.25C12.87 16.27 15.75 12.4 15.75 8.25V4.5L9 1.5ZM7.5 12.75L4.5 9.75L5.56 8.69L7.5 10.62L12.44 5.69L13.5 6.75L7.5 12.75Z"
+							fill="#A8D5BA"></path>
+					</svg>
+					<span class="hero-trust-text">Não cobramos taxa antecipada</span>
+				</div>
+
+				<div class="hero-trust-item">
+					<svg class="trust-check-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M9 1.5L2.25 4.5V8.25C2.25 12.4 5.13 16.27 9 17.25C12.87 16.27 15.75 12.4 15.75 8.25V4.5L9 1.5ZM7.5 12.75L4.5 9.75L5.56 8.69L7.5 10.62L12.44 5.69L13.5 6.75L7.5 12.75Z"
+							fill="#A8D5BA"></path>
+					</svg>
+					<span class="hero-trust-text">Sem depósito para liberar crédito</span>
+				</div>
+
+				<div class="hero-trust-item">
+					<svg class="trust-check-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M9 1.5L2.25 4.5V8.25C2.25 12.4 5.13 16.27 9 17.25C12.87 16.27 15.75 12.4 15.75 8.25V4.5L9 1.5ZM7.5 12.75L4.5 9.75L5.56 8.69L7.5 10.62L12.44 5.69L13.5 6.75L7.5 12.75Z"
+							fill="#A8D5BA"></path>
+					</svg>
+					<span class="hero-trust-text">Seus dados protegidos — LGPD</span>
+				</div>
+
+				<div class="hero-trust-item">
+					<svg class="trust-check-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M9 1.5L2.25 4.5V8.25C2.25 12.4 5.13 16.27 9 17.25C12.87 16.27 15.75 12.4 15.75 8.25V4.5L9 1.5ZM7.5 12.75L4.5 9.75L5.56 8.69L7.5 10.62L12.44 5.69L13.5 6.75L7.5 12.75Z"
+							fill="#A8D5BA"></path>
+					</svg>
+					<span class="hero-trust-text">Atendimento humanizado para você organizar sua vida
+						financeira.</span>
+				</div>
+			</div>
+			<div class="hero-content">
+				<div class="hero-tag">
+					<span class="hero-tag-dot"></span>
+					<span class="hero-tag-text">Há 20 anos construindo confiança</span>
+				</div>
+
+				<div class="hero-title-box">
+					<h1 class="hero-heading">
+						<em>Compramos sua Dívida</em> do Cartão Master, Cartão Benefício ou Cartão de
+						Crédito Consignado.
+					</h1>
+					<p class="hero-subtitle">
+						Transformando sua dívida em alívio financeiro com quem mais entende do assunto
+					</p>
+				</div>
+
+				<div class="hero-cta-group">
+					<a href="https://wa.me//5516981921371?text=Quero%20saber%20mais" class="btn btn-white"
+						target="_blank" rel="noopener">
+						Chamar no Whats
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="2">
+							<circle cx="12" cy="12" r="10"></circle>
+							<path d="M12 8l4 4-4 4M8 12h8" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</a>
+					<button type="button" class="btn btn btn-green" id="btn-me-ligue">
+						<span>Me Ligue</span>
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="2">
+							<circle cx="12" cy="12" r="10"></circle>
+							<path d="M12 8l4 4-4 4M8 12h8" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+
+					</button>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Marquee -->
+	<div class="marquee dark-green-bg">
+		<div class="marquee-track">
+			<div class="marquee-item cream">
+				<div class="icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						class="lucide lucide-star-icon lucide-star">
+						<path
+							d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+					</svg>
+				</div>
+				<div class="marquee-item-text">
+					4,8 no Google
+					<span>mais de 380 avaliações</span>
+				</div>
+			</div>
+			<div class="marquee-item cream">
+				<div class="icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						class="lucide lucide-users-icon lucide-users">
+						<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+						<path d="M16 3.128a4 4 0 0 1 0 7.744" />
+						<path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+						<circle cx="9" cy="7" r="4" />
+					</svg>
+				</div>
+				<div class="marquee-item-text">
+					+250 mil clientes
+					<span>atendidos no Brasil</span>
+				</div>
+			</div>
+			<div class="marquee-item cream">
+				<div class="icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						class="lucide lucide-banknote-icon lucide-banknote">
+						<rect width="20" height="12" x="2" y="6" rx="2" />
+						<circle cx="12" cy="12" r="2" />
+						<path d="M6 12h.01M18 12h.01" />
+					</svg>
+				</div>
+				<div class="marquee-item-text">
+					Compras de Dívida
+					<span>Banco Master e CredCesta</span>
+				</div>
+			</div>
+			<div class="marquee-item cream">
+				<div class="icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						class="lucide lucide-map-pinned-icon lucide-map-pinned">
+						<path
+							d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0" />
+						<circle cx="12" cy="8" r="2" />
+						<path
+							d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712" />
+					</svg>
+				</div>
+				<div class="marquee-item-text">
+					Servidores Estaduais e Municipais
+					<span>Atendemos em vários estados</span>
+				</div>
+			</div>
+			<div class="marquee-item cream">
+				<div class="icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						class="lucide lucide-award-icon lucide-award">
+						<path
+							d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+						<circle cx="12" cy="8" r="6" />
+					</svg>
+				</div>
+				<div class="marquee-item-text">
+					Especialistas em Servidores
+					<span>com agências em várias cidades</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SERVICES -->
+	<section id="servicos" class="pb-0">
+		<div class="container">
+			<div class="section-header">
+				<div>
+					<span class="section-tag green">Para quem é?</span>
+					<h2 class="section-title blue">Escolha seu convênio e veja as <em>condições ideais</em> para você
+					</h2>
+				</div>
+				<p class="section-desc muted">Soluções pensadas especialmente para quem é servidor Estadual e Municipal
+					de São
+					Paulo e vários outros estados do Brasil. Fale Conosco pelo Whats, Telefone ou Email. Atendimento
+					humanizado para você reorganizar sua vida financeira com segurança.</p>
+			</div>
+
+			<div class="cards-grid">
+				<div class="card portrait service" style="background-image: url(./assets/images/convenio-02.jpg);">
+					<h3 class="cream">Prefeitura de São Paulo</h3>
+					<p class="cream">Você servidor da cidade de São Paulo pode obter seu crédito consignado. Fale
+						com a gente!
+					</p>
+					<a href="#" class="service-link">Ver detalhes <svg xmlns="http://www.w3.org/2000/svg" width="20"
+							height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10" />
+							<path d="m12 16 4-4-4-4" />
+							<path d="M8 12h8" />
+						</svg>
+					</a>
+				</div>
+
+				<div class="card portrait service" style="background-image: url(./assets/images/convenio-04.jpg);">
+					<h3 class="cream">Governo de São Paulo</h3>
+					<p class="cream">Você servidor do estado de São Paulo pode obter seu crédito consignado. Fale
+						com a gente!
+					</p>
+					<a href="#" class="service-link">Ver detalhes <svg xmlns="http://www.w3.org/2000/svg" width="20"
+							height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10" />
+							<path d="m12 16 4-4-4-4" />
+							<path d="M8 12h8" />
+						</svg>
+					</a>
+				</div>
+
+				<div class="card portrait service" style="background-image: url(./assets/images/convenio-05.jpg);">
+					<h3 class="cream">Prefeitura de Curitiba</h3>
+					<p class="cream">Você servidor de Curitiba pode obter seu crédito consignado. Fale
+						com a gente!</p>
+					<a href="#" class="service-link">Ver detalhes <svg xmlns="http://www.w3.org/2000/svg" width="20"
+							height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10" />
+							<path d="m12 16 4-4-4-4" />
+							<path d="M8 12h8" />
+						</svg>
+					</a>
+				</div>
+
+				<div class="card portrait service" style="background-image: url(./assets/images/convenio-02.jpg);">
+					<h3 class="cream">Governo do Paraná</h3>
+					<p class="cream">Você servidor do estado do Paraná, obtenha seu crédito consignado. Fale
+						com a gente!
+					</p>
+					<a href="#" class="service-link">Ver detalhes <svg xmlns="http://www.w3.org/2000/svg" width="20"
+							height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10" />
+							<path d="m12 16 4-4-4-4" />
+							<path d="M8 12h8" />
+						</svg>
+					</a>
+				</div>
+
+				<div class="card portrait service" style="background-image: url(./assets/images/convenio-04.jpg);">
+					<h3 class="cream">Prefeitura de São Luis</h3>
+					<p class="cream">Você servidor da cidade de São Luis-MA pode obter seu crédito consignado. Fale
+						com a gente!
+					</p>
+					<a href="#" class="service-link">Ver detalhes <svg xmlns="http://www.w3.org/2000/svg" width="20"
+							height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10" />
+							<path d="m12 16 4-4-4-4" />
+							<path d="M8 12h8" />
+						</svg>
+					</a>
+				</div>
+
+				<div class="card portrait service" style="background-image: url(./assets/images/convenio-05.jpg);">
+					<h3 class="cream">Governo do Maranhão</h3>
+					<p class="cream">Você servidor do estado do Maranhão pode obter seu crédito consignado. Fale
+						com a gente!</p>
+					<a href="#" class="service-link">Ver detalhes <svg xmlns="http://www.w3.org/2000/svg" width="20"
+							height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10" />
+							<path d="m12 16 4-4-4-4" />
+							<path d="M8 12h8" />
+						</svg>
+					</a>
+				</div>
+
+				<div class="card portrait service" style="background-image: url(./assets/images/convenio-02.jpg);">
+					<h3 class="cream">Prefeitura de Porto Alegre</h3>
+					<p class="cream">Você servidor de Porto Alegre, obtenha seu crédito consignado. Fale
+						com a gente!
+					</p>
+					<a href="#" class="service-link">Ver detalhes <svg xmlns="http://www.w3.org/2000/svg" width="20"
+							height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10" />
+							<path d="m12 16 4-4-4-4" />
+							<path d="M8 12h8" />
+						</svg>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- PROCESS -->
+	<section id="processo">
+		<div class="container">
+			<div class="section-header">
+				<div>
+					<span class="section-tag green">Como funciona</span>
+					<h2 class="section-title blue">Simples como deve <em>ser</em>.</h2>
+				</div>
+				<p class="section-desc muted">Sem burocracia, sem letras miúdas. Um processo claro e seguro do primeiro
+					contato
+					até o dinheiro na sua conta.</p>
+			</div>
+
+			<div class="steps-section">
+				<div class="steps-container">
+					<div class="steps-list">
+						<div class="step" data-image="step1">
+							<div class="step-number">1</div>
+							<div class="step-content">
+								<h3 class="step-title">Simule online</h3>
+								<p class="step-description">
+									Escolha o produto ideal para você e preencha o formulário com todos os seus dados.
+									Leva menos de 1 minuto e não consulta seu CPF.
+								</p>
+							</div>
+						</div>
+
+						<div class="step" data-image="step2">
+							<div class="step-number">2</div>
+							<div class="step-content">
+								<h3 class="step-title">Fale com um consultor</h3>
+								<p class="step-description">
+									Nosso consultor entra em contato pelo WhatsApp ou telefone para apresentar
+									as melhores opções e tirar todas as suas dúvidas sem pressa.
+								</p>
+							</div>
+						</div>
+
+						<div class="step" data-image="step3">
+							<div class="step-number">3</div>
+							<div class="step-content">
+								<h3 class="step-title">Quitamos sua dívida</h3>
+								<p class="step-description">
+									Compramos a sua dívida de cartões benefício, cartão de crédito consignado
+									ou empréstimos consignados. Seu nome preservado e mais controle na sua vida
+									financeira.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="steps-images">
+						<div class="step-image active" id="step1">
+							<img src="./assets/images/step-01.png" alt="Simule online">
+						</div>
+						<div class="step-image" id="step2">
+							<img src="./assets/images/step-02.png" alt="Fale com um consultor">
+						</div>
+						<div class="step-image" id="step3">
+							<img src="./assets/images/step-03.png" alt="Quitamos sua dívida">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- INSTITUIÇÕES -->
+	<section class="banks">
+		<span class="section-tag">Compramos Dívidas das Principais Instituições</span>
+		<div class="banks-list">
+			<img src="./assets/images/logo-banco-master.png" alt="Banco Master">
+			<img src="./assets/images/logo-credcesta.png" alt="Credcesta">
+			<img src="./assets/images/logo-banco-pan.png" alt="Banco Pan">
+			<img src="./assets/images/logo-ola-consignado.png" alt="Olá Consignado">
+			<img src="./assets/images/logo-banco-bmg.png" alt="Banco BMG">
+			<img src="./assets/images/logo-banco-daycoval.png" alt="Banco Daycoval">
+		</div>
+	</section>
+
+	<section class="creditcard green-bg">
+		<div class="container">
+			<div class="creditcard-text">
+				<h3 class="section-title cream">Quite suas dívidas <em>com desconto</em></h3>
+				<p class="section-desc cream">Compramos a dívida de cartões benefício e cartões consignados, baixamos os
+					juros
+					e ainda liberamos um troco</p>
+				<ul class="section-list cream">
+					<li>
+						<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="#196239" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check">
+								<circle cx="12" cy="12" r="10" />
+								<path d="m9 12 2 2 4-4" />
+							</svg>
+						</div>
+						<p>Parcela descontada automaticamente no contracheque ou benefício. Você não
+							precisa se preocupar
+							em pagar todo mês.</p>
+					</li>
+					<li>
+						<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="#196239" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check">
+								<circle cx="12" cy="12" r="10" />
+								<path d="m9 12 2 2 4-4" />
+							</svg>
+						</div>
+						<p>Aprovação mesmo com nome no Serasa ou SPC. Não fazemos consulta ao cadastro de negativados
+						</p>
+					</li>
+					<li>
+						<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="#196239" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check">
+								<circle cx="12" cy="12" r="10" />
+								<path d="m9 12 2 2 4-4" />
+							</svg>
+						</div>
+						<p>Prazo de até 96 meses para diluir a parcela e caber no orçamento</p>
+					</li>
+					<li>
+						<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="#196239" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check">
+								<circle cx="12" cy="12" r="10" />
+								<path d="m9 12 2 2 4-4" />
+							</svg>
+						</div>
+						<p>Sem cobrança de tarifa de abertura de crédito (TAC) escondida</p>
+					</li>
+				</ul>
+			</div>
+			<div class="creditcard-image">
+				<img src="./assets/images/cartoes.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section id="safety" class="safety">
+		<div class="container">
+			<div class="section-header">
+				<div>
+					<span class="section-tag green">Sua segurança em primeiro lugar</span>
+					<h2 class="section-title blue">A Allcred <em>nunca</em> vai pedir isso.</h2>
+				</div>
+				<p class="section-desc muted">Se alguém entrar em contato pedindo qualquer um dos itens abaixo em nome
+					da
+					Allcred,
+					é golpe. Desligue e ligue para nós imediatamente.</p>
+			</div>
+			<div class="cards-grid">
+				<feature-card icon="shield_off" title="Nunca pedimos depósito antecipado"
+					text="Nenhum valor precisa ser pago antes da liberação do seu empréstimo."></feature-card>
+				<feature-card icon="shield_off" title="Não cobramos taxa para liberar crédito" text="Taxas de análise, seguro obrigatório ou outra cobrança são sinal de
+						fraude."></feature-card>
+				<feature-card icon="shield_off" title="Nunca pedimos aumento de score" text="Você não precisa pagar para melhorar sua pontuação ou para ser
+						aprovado."></feature-card>
+			</div>
+		</div>
+	</section>
+
+	<section id="testimonial" class="white-bg">
+		<div class="container">
+			<div class="section-header">
+				<div>
+					<span class="section-tag green">O que nossos clientes dizem</span>
+					<h2 class="section-title blue">Mais de <em>250.000 famílias</em> atendidas em todo Brasil</h2>
+				</div>
+				<div class="section-desc">
+					<div class="stars-row">
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#2e8b57">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#2e8b57">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#2e8b57">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#2e8b57">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#2e8b57">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+					</div>
+					<h2 class="green">4,8 de 5</h2>
+					<p class="blue">no Google</p>
+				</div>
+			</div>
+			<div class="reviews-grid">
+				<!-- Review 1 -->
+				<div class="review-card">
+					<div class="stars-row">
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+					</div>
+					<p class="muted">"Eu tinha desconfiança de fazer empréstimo pela internet, mas o consultor da
+						Allcred me ligou, explicou tudo com paciência e o dinheiro caiu na minha conta no dia seguinte.
+						Recomendo muito."</p>
+					<div class="reviewer-box">
+						<img src="./assets/images/reviewer-maria.png" alt="Maria Ribeiro" class="reviewer-avatar">
+						<div class="reviewer-details muted">
+							<strong class="blue">Maria Ribeiro, 67 anos</strong>
+							<span>Aposentada INSS · Franca, SP</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Review 2 -->
+				<div class="review-card">
+					<div class="stars-row">
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+					</div>
+					<p class="muted">"Estava com a margem estourada e precisando organizar as contas. Com a
+						compra da dívida do cartão consignado consegui baixar a parcela e sobrou um troco na conta."</p>
+					<div class="reviewer-box">
+						<img src="./assets/images/reviewer-maria.png" alt="João Carlos" class="reviewer-avatar">
+						<div class="reviewer-details muted">
+							<strong class="blue">João Carlos, 54 anos</strong>
+							<span>Servidor Estadual · São Paulo, SP</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Review 3 -->
+				<div class="review-card">
+					<div class="stars-row">
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+						<svg class="star-icon" viewBox="0 0 24 24" fill="#fdb022">
+							<path
+								d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+							</path>
+						</svg>
+					</div>
+					<p class="muted">"Excelente atendimento! Me explicaram passo a passo e tiraram todas as
+						minhas dúvidas sem me pressionar a fechar nada. Transparência total."</p>
+					<div class="reviewer-box">
+						<img src="./assets/images/reviewer-maria.png" alt="Ana Paula" class="reviewer-avatar">
+						<div class="reviewer-details muted">
+							<strong class="blue">Ana Paula, 48 anos</strong>
+							<span>Pensionista SPPREV · Campinas, SP</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="faq">
+		<div class="container">
+			<div class="section-header">
+				<div>
+					<span class="section-tag green">Dúvidas frequentes</span>
+					<h2 class="section-title blue">Perguntas que <em>todo mundo faz</em></h2>
+				</div>
+				<p class="section-desc muted">Se não encontrar sua dúvida aqui, nosso consultor responde em minutos para
+					você.</p>
+			</div>
+			<div class="faq-list">
+				<!-- FAQ 1 -->
+				<div class="faq-item">
+					<button class="faq-question-btn" type="button">
+						<span class="faq-question-text">O que é o empréstimo consignado?</span>
+						<div class="faq-toggle-icon">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2E8B57"
+								stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<line x1="8" y1="3" x2="8" y2="13"></line>
+								<line x1="3" y1="8" x2="13" y2="8"></line>
+							</svg>
+						</div>
+					</button>
+					<div class="faq-answer-panel">
+						<p class="muted">O empréstimo consignado é uma modalidade de crédito onde as parcelas são
+							descontadas
+							diretamente
+							da sua folha de pagamento ou benefício do INSS, garantindo as menores taxas de juros do
+							mercado.
+						</p>
+					</div>
+				</div>
+
+				<!-- FAQ 2 -->
+				<div class="faq-item active">
+					<button class="faq-question-btn" type="button">
+						<span class="faq-question-text">Posso fazer empréstimo se meu nome estiver sujo no
+							Serasa?</span>
+						<div class="faq-toggle-icon">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2E8B57"
+								stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<line x1="8" y1="3" x2="8" y2="13"></line>
+								<line x1="3" y1="8" x2="13" y2="8"></line>
+							</svg>
+						</div>
+					</button>
+					<div class="faq-answer-panel">
+						<p class="muted">Sim! Como o desconto é feito diretamente em folha de pagamento ou benefício,
+							não realizamos
+							consulta ao SPC ou Serasa para aprovação do seu crédito.</p>
+					</div>
+				</div>
+
+				<!-- FAQ 3 -->
+				<div class="faq-item">
+					<button class="faq-question-btn" type="button">
+						<span class="faq-question-text">Qual é a margem consignável? Como sei quanto posso pegar?</span>
+						<div class="faq-toggle-icon">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2E8B57"
+								stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<line x1="8" y1="3" x2="8" y2="13"></line>
+								<line x1="3" y1="8" x2="13" y2="8"></line>
+							</svg>
+						</div>
+					</button>
+					<div class="faq-answer-panel">
+						<p class="muted">A margem consignável é a porcentagem limite da sua renda mensal que pode ser
+							comprometida com
+							as
+							parcelas. Nossa equipe calcula o valor exato disponível para você sem compromisso.</p>
+					</div>
+				</div>
+
+				<!-- FAQ 4 -->
+				<div class="faq-item">
+					<button class="faq-question-btn" type="button">
+						<span class="faq-question-text">Preciso sair de casa para fazer o empréstimo?</span>
+						<div class="faq-toggle-icon">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2E8B57"
+								stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<line x1="8" y1="3" x2="8" y2="13"></line>
+								<line x1="3" y1="8" x2="13" y2="8"></line>
+							</svg>
+						</div>
+					</button>
+					<div class="faq-answer-panel">
+						<p class="muted">Não. Todo o processo é 100% digital e seguro. Você pode simular, enviar seus
+							documentos e
+							assinar
+							o contrato pelo próprio celular ou computador.</p>
+					</div>
+				</div>
+
+				<!-- FAQ 5 -->
+				<div class="faq-item">
+					<button class="faq-question-btn" type="button">
+						<span class="faq-question-text">Em quanto tempo o dinheiro cai na conta?</span>
+						<div class="faq-toggle-icon">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2E8B57"
+								stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<line x1="8" y1="3" x2="8" y2="13"></line>
+								<line x1="3" y1="8" x2="13" y2="8"></line>
+							</svg>
+						</div>
+					</button>
+					<div class="faq-answer-panel">
+						<p class="muted">Após a aprovação da proposta e formalização digital, o valor é creditado via
+							PIX ou TED na
+							sua
+							conta bancária em até 24 horas úteis.</p>
+					</div>
+				</div>
+
+				<!-- FAQ 6 -->
+				<div class="faq-item">
+					<button class="faq-question-btn" type="button">
+						<span class="faq-question-text">O que é portabilidade de empréstimo? Vale a pena?</span>
+						<div class="faq-toggle-icon">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2E8B57"
+								stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<line x1="8" y1="3" x2="8" y2="13"></line>
+								<line x1="3" y1="8" x2="13" y2="8"></line>
+							</svg>
+						</div>
+					</button>
+					<div class="faq-answer-panel">
+						<p class="muted">A portabilidade permite transferir sua dívida de um banco para outro que
+							ofereça taxas
+							menores.
+							Com isso, é possível reduzir a parcela mensal ou refinanciar e receber um troco na sua
+							conta.
+						</p>
+					</div>
+				</div>
+
+				<!-- FAQ 7 -->
+				<div class="faq-item">
+					<button class="faq-question-btn" type="button">
+						<span class="faq-question-text">A Allcred é uma empresa autorizada? Como confio?</span>
+						<div class="faq-toggle-icon">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2E8B57"
+								stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<line x1="8" y1="3" x2="8" y2="13"></line>
+								<line x1="3" y1="8" x2="13" y2="8"></line>
+							</svg>
+						</div>
+					</button>
+					<div class="faq-answer-panel">
+						<p class="muted">A Allcred atua como correspondente bancário autorizado pelas principais
+							instituições
+							financeiras
+							do país há mais de 20 anos, operando sob as diretrizes do Banco Central do Brasil.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="green-bg cta" id="contato">
+		<div class="container">
+			<div class="cta-text">
+				<h3 class="section-title cream">Pronto para ter crédito com as <em>melhores condições</em>?</h3>
+				<p class="section-desc cream">Simule grátis agora ou fale com um consultor — sem compromisso.</p>
+				<a href="https://wa.me//5516981921371?text=Quero%20saber%20mais" class="btn btn-blue" target="_blank"
+					rel="noopener">
+					Chame no Whatsapp
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<circle cx="12" cy="12" r="10"></circle>
+						<path d="M12 8l4 4-4 4M8 12h8" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</a>
+			</div>
+			<div class="person">
+				<img src="./assets/images/cta-person.png" alt="Atendimento Allcred">
+			</div>
+		</div>
+	</section>
+
+	<ac-footer></ac-footer>
+
+	<!-- MODAL ME LIGUE -->
+	<div class="modal-overlay" id="modal-me-ligue" aria-hidden="true">
+		<div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+			<button type="button" class="modal-close" id="modal-close-btn" aria-label="Fechar modal">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+					stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+					class="lucide lucide-x-icon lucide-x">
+					<path d="M18 6 6 18" />
+					<path d="m6 6 12 12" />
+				</svg>
+			</button>
+
+			<div class="modal-header">
+				<h3 id="modal-title" class="modal-heading">Deixe seus dados que entraremos em contato com você:</h3>
+			</div>
+
+			<form id="form-me-ligue" class="modal-form" action="https://formsubmit.co/sac@allcred.com.br" method="POST">
+				<input type="hidden" name="_subject" value="Solicitação de Contato - Me Ligue (Allcred)">
+				<input type="hidden" name="_captcha" value="false">
+
+				<div class="form-grid">
+					<div class="form-group">
+						<label for="input-nome">Nome:*</label>
+						<input type="text" id="input-nome" name="nome" placeholder="Seu nome completo" required>
+					</div>
+
+					<div class="form-group">
+						<label for="input-telefone">Telefone:*</label>
+						<input type="tel" id="input-telefone" name="telefone" placeholder="(00) 00000-0000"
+							maxlength="15" required>
+					</div>
+
+					<div class="form-group">
+						<label for="input-dia">Melhor dia:*</label>
+						<input type="text" id="input-dia" name="melhor_dia" placeholder="00/00/0000" maxlength="10"
+							required>
+					</div>
+
+					<div class="form-group">
+						<label for="input-horario">Horário:*</label>
+						<input type="text" id="input-horario" name="melhor_horario" placeholder="00:00" maxlength="5"
+							required>
+					</div>
+				</div>
+
+				<div class="form-actions">
+					<button type="submit" class="btn btn-blue">
+						<span>Enviar</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="lucide lucide-send-icon lucide-send">
+							<path
+								d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+							<path d="m21.854 2.147-10.94 10.939" />
+						</svg>
+					</button>
+				</div>
+
+				<div id="form-feedback" class="form-feedback" style="display: none;"></div>
+			</form>
+		</div>
+	</div>
+
+	<script>
+
+		const mobileMenu = document.getElementById('mobile-menu');
+		function fecharMenu() {
+			mobileMenu.classList.remove('open');
+			hamburger.classList.remove('open');
+			hamburger.setAttribute('aria-expanded', 'false');
+			document.body.style.overflow = '';
+		}
+		document.addEventListener('keydown', e => {
+			if (e.key === 'Escape' && mobileMenu.classList.contains('open')) fecharMenu();
+		});
+
+		// FAQ
+		document.addEventListener('DOMContentLoaded', () => {
+			// 1. FAQ Accordion Interactivity
+			const faqItems = document.querySelectorAll('.faq-item');
+
+			faqItems.forEach(item => {
+				const questionBtn = item.querySelector('.faq-question-btn');
+				questionBtn.addEventListener('click', () => {
+					const isActive = item.classList.contains('active');
+
+					// Close all other FAQ items
+					faqItems.forEach(otherItem => {
+						otherItem.classList.remove('active');
+					});
+
+					// Toggle current item
+					if (!isActive) {
+						item.classList.add('active');
+					}
+				});
+			});
+		});
+
+		// Faixa de comunicado rolando
+		var marqueeCopy = document.querySelector(".marquee-track").cloneNode(true);
+		document.querySelector(".marquee").appendChild(marqueeCopy);
+
+		// Muda as imagens nos passos - Como Funciona
+		const steps = document.querySelectorAll('.step');
+		const images = document.querySelectorAll('.step-image');
+		steps.forEach(step => {
+			step.addEventListener('mouseenter', () => {
+				const targetId = step.dataset.image;
+				images.forEach(img => img.classList.toggle('active', img.id === targetId));
+			});
+		});
+	</script>
+</body>
+
+</html>

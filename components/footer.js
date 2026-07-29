@@ -7,7 +7,7 @@ class Footer extends HTMLElement {
 						<!-- Brand Column -->
 						<div class="footer-brand">
 							<div class="footer-logo">
-								<img src="./assets/images/logo_allcred_branco.png" alt="Allcred Logo" width="186" height="129">
+								<img src="/allcred/assets/images/logo_allcred_branco.png" alt="Allcred Logo" width="186" height="129">
 							</div>
 							<p class="footer-brand-desc">
 								Correspondente Bancário há mais de 15 Anos para o Sul, Sudeste e todo Brasil

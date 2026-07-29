@@ -1,0 +1,31 @@
+.card-list-icon {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--size-48);
+    padding: var(--size-24);
+    border: 1px solid var(--green-soft);
+    border-radius: var(--size-20);
+    transition: border-color .2s,box-shadow .2s;
+}
+.card-list-icon:hover {
+    border-color: var(--green-accent);
+}
+
+.card-list-icon .icon {
+    display: flex;
+    border-radius: var(--size-8);
+    background: var(--green-soft);
+    color: var(--green-accent);
+    padding: var(--size-8);
+    transition: background .2s;
+}
+.card-list-icon:hover .icon {
+    background: var(--green-accent);
+    color: var(--green-soft);
+}
+.card-list-icon h3 {
+    font-size: clamp(var(--size-16), 3vw, var(--size-18));
+}
+.card-list-icon h3 {
+    font-size: clamp(var(--size-14), 2vw, var(--size-16));
+}
