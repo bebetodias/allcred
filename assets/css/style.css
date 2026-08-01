@@ -347,12 +347,6 @@ footer .container {
     width: 100%;
 }
 
-.service::before {
-	height: 50%;
-	opacity: 1;
-	background: linear-gradient(to top, var(--blue-deep), rgba(10, 37, 64, 0));
-}
-
 .service-link {
 	color: var(--green-soft);
 	font-weight: 600;
